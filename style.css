@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    text-align: center;
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+
+}
+
+a{  
+    background-color: #343A40;
+    border-radius: 4px;  
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+  
+}
+#button1{
+    background-color: #FC4F4F;
+    /* animation: vivek 3s linear infinite ; */
+}
+#button2{
+    background-color: #FC4F4F;
+}
+
+#button1:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: vivek 3s linear infinite ;
+}
+#button2:hover{
+    background-image: linear-gradient(90deg, green 0%, yellowgreen 100%);
+    animation: vivek 2s linear infinite ;
+}
+@keyframes vivek {
+
+    to {
+        /* width: 100%; */
+      background-position:20rem;
+    }
+  }
+#button3{
+    height: 2.3rem;
+    width: 7rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 8px;
+    background-color: #00C0FF;
+}
+
+#button3:hover{
+    border-block: 0.3rem solid rgb(8, 23, 52);
+    writing-mode:vertical-lr;
+    direction:rtl;
+    }
+
+#button4{
+    height: 2.3rem;
+    width: 7rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 8px;
+    background-color: rgb(85, 120, 33);
+}
+#button4:hover{
+    
+    transform: translateY(-3px)scale(1.2);
+    border-bottom-style:outset ;
+    box-shadow: 0 0.5em 0.5em -0.1em #6ead2b;
+    transform: skew(2);
+}
+
+#button5{
+    height: 2.3rem;
+    width: 7rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 8px;
+    background-color: rgb(168, 46, 152);
+    
+}
+#button5:hover{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 #ef6eae; }
+  }
+
+
